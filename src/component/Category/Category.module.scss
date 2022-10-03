@@ -1,0 +1,18 @@
+.category {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 40%;
+    height: 4rem;
+    margin: 3rem 0 1rem 2rem;
+    z-index: 0;
+    cursor: pointer;
+
+    &__title {
+        position: relative;
+        text-transform: uppercase;
+        margin: 1rem;
+    }
+}
