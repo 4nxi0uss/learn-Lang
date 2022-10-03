@@ -1,0 +1,50 @@
+.Add {
+    position: fixed;
+    display: inline-block;
+    content: " ";
+    border: 5px solid blueviolet;
+    border-radius: 100%;
+    width: 6rem;
+    height: 6rem;
+    top: auto;
+    left: auto;
+    bottom: 4rem;
+    right: 2rem;
+    cursor: pointer;
+    z-index: 0;
+
+    &__horizontal {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        translate: -50%;
+        width: 50%;
+        content: " ";
+        background-color: blueviolet;
+        border: 2px solid blueviolet;
+        z-index: 0;
+    }
+
+    &__vertical {
+        position: relative;
+        rotate: 90deg;
+        translate: 50% 950%;
+        width: 50%;
+        margin: 0;
+        content: " ";
+        background-color: blueviolet;
+        border: 2px solid blueviolet;
+        z-index: 0;
+    }
+
+    &__addText {
+        position: relative;
+        top: 100%;
+        z-index: 0;
+        font-size: 1.5rem;
+        color: white;
+        padding: .3rem .7rem;
+        border-radius: 20px;
+        background-color: blueviolet;
+    }
+}
