@@ -1,0 +1,20 @@
+:root {
+    --header-height: 5rem;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: var(--header-height);
+    align-items: center;
+    box-shadow: 0px 0px 5px grey;
+    z-index: 0;
+
+    &__title {
+        position: relative;
+        color: blueviolet;
+        margin-left: 2rem;
+        z-index: 0;
+    }
+}
