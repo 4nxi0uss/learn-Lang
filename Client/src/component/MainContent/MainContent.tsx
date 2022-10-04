@@ -1,7 +1,7 @@
 import Style from './MainContent.module.scss'
 import Block from 'bem-css-modules'
 
-import Category from '../Category/Category';
+import CategoryRow from '../CategoryRow/CategoryRow';
 import AddSth from '../AddSth/AddSth';
 
 const b = Block(Style)
@@ -9,10 +9,10 @@ const b = Block(Style)
 const MainContent = () => {
     return (
         <main className={b()} >
-            <Category titleText='Human' />
-            <Category titleText='Vehicle' />
-            <Category titleText='Sport' />
-            <Category titleText='Brain' />
+            <CategoryRow titleText='Human' />
+            <CategoryRow titleText='Vehicle' />
+            <CategoryRow titleText='Sport' />
+            <CategoryRow titleText='Brain' />
             <AddSth />
         </main>
     );

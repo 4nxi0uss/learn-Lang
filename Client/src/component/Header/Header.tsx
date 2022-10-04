@@ -1,7 +1,7 @@
 import Style from './Header.module.scss'
-import block from 'bem-css-modules'
+import Block from 'bem-css-modules'
 
-const b = block(Style)
+const b = Block(Style)
 
 const Header = () => {
     return (
