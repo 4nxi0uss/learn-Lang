@@ -1,14 +1,11 @@
-import Style from './MainContent.module.scss'
-import Block from 'bem-css-modules'
+import './MainContent.scss'
 
 import CategoryRow from '../CategoryRow/CategoryRow';
 import AddSth from '../AddSth/AddSth';
 
-const b = Block(Style)
-
 const MainContent = () => {
     return (
-        <main className={b()} >
+        <main className='main' >
             <CategoryRow titleText='Human' />
             <CategoryRow titleText='Vehicle' />
             <CategoryRow titleText='Sport' />

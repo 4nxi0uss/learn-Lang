@@ -1,12 +1,9 @@
-import Style from './Header.module.scss'
-import Block from 'bem-css-modules'
-
-const b = Block(Style)
+import './Header.scss'
 
 const Header = () => {
     return (
-        <header className={b()}>
-            <h1 className={b('title')}>LearnLang</h1>
+        <header className='header'>
+            <h1 className='header__title'>LearnLang</h1>
         </header>
     );
 }
