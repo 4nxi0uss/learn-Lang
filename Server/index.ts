@@ -7,6 +7,8 @@ import cors from 'cors'
 
 import dotenv from 'dotenv';
 
+import { wordRouter } from './Routes/Word';
+
 dotenv.config();
 
 const app: Express = express();
@@ -20,6 +22,8 @@ app.use(cors({
     origin: true,
     credentials: true
 }))
+
+app.use('/api/cat', wordRouter)
 
 app.get('/', (req: Request, res: Response) => {
     res.send('Express + TypeScript Server');
