@@ -5,10 +5,12 @@ import { sessionStoreMiddleware } from '../Middleware/SessionStoreMiddleware'
 import { learnLangApi } from '../Services/learnLangApi'
 
 import categorySlice from '../Slice/categorySlice'
+import inputRowSlice from '../Slice/inputRowSlice'
 
 export const store = configureStore({
     reducer: {
         category: categorySlice,
+        inputForm: inputRowSlice,
         [learnLangApi.reducerPath]: learnLangApi.reducer,
     },
 
