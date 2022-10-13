@@ -7,5 +7,13 @@ export const sessionStoreMiddleware = (store: any) => (next: any) => (action: Pa
         sessionStorage.setItem('category', store.getState().category.cat)
     }
 
+    if (action.type === ('formInput/inputFormRowData')) {
+        try {
+            sessionStorage.setItem('addForm', JSON.stringify(store.getState().inputForm.inputFormData))
+        } catch (error) {
+            console.warn(error);
+        }
+    }
+
     return result;
 }
