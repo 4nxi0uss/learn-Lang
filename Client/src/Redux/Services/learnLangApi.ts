@@ -16,9 +16,27 @@ export const learnLangApi = createApi({
                 url: `/cat/sub-categories/${categoryId}`
             }),
         }),
+        patchWordPLtoENG: builder.query({
+            query: (categoryId: number) => ({
+                url: `/cat/PL-ENG`,
+                method: 'PATCH',
+                body: {
+                    categoryId: categoryId
+                }
+            }),
+        }),
+        postWords: builder.mutation({
+            query: (wordobj: Object) => ({
+                url: `/cat/post-words`,
+                method: 'POST',
+                body: {
+                    wordobj
+                }
+            }),
+        }),
     }),
 })
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useGetCategoriesQuery, useGetSubCategoriesQuery } = learnLangApi
+export const { useGetCategoriesQuery, useGetSubCategoriesQuery, usePatchWordPLtoENGQuery, usePostWordsMutation } = learnLangApi
