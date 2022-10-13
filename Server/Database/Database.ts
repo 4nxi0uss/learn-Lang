@@ -1,4 +1,4 @@
-import mysql from 'mysql'
+import mysql from 'mysql2'
 
 const { SERVER, DATABASE, LOGIN, PASSWORD } = process.env
 
@@ -7,5 +7,6 @@ export const db = mysql.createConnection({
     user: LOGIN,
     password: PASSWORD,
     database: DATABASE,
-    dateStrings: ['DATE']
+    dateStrings: ['DATE'],
+    multipleStatements: true
 })
