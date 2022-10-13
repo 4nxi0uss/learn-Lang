@@ -12,7 +12,7 @@ const Menu = () => {
     const renderCategories = data?.data.map(({ name }: { name: string }) => <CategoryRow key={name} page='/category' titleText={name} />);
 
     return (
-        <section>
+        <section className='menu'>
             {renderCategories}
         </section>
     );
